@@ -1,8 +1,10 @@
-.topo {
-}
-
-.topo2 {
-}
-
 body{
+    background-color: blanchedalmond;
 }
+
+.topo {
+    height: 54px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+}
+
