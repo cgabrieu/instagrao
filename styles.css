@@ -1,5 +1,7 @@
 body {
     background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 .container {
     width: 935px;
@@ -81,9 +83,44 @@ ion-icon {
 }
 
 .stories {
-    height: 100px;
-    background-color: greenyellow;
+    height: 118px;
+    position: relative;
+    background-color: #FFFFFF;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-story {
+    margin-right: 14px;
+    width: 66px;
+    height: 66px;
+    background-image: url('images/stories_background.jpg');
+    background-size: 66px;
+}
+
+p{
+    margin-top: 7px;
+    width: 66px;
+    text-align: center;
+}
+
+.stories .item-story:first-child {
+    margin-left: 18px;
+}
+
+.item-story img{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.seta-stories {
+    position: absolute;
+    color: #FFFFFF;
+    right: 10px;
+    font-size: 30px;
 }
 
 .post {
@@ -147,9 +184,11 @@ ion-icon {
 
     .stories {
         margin-bottom: 0px;
+        width: 100vw;
     }
 
     .container {
         top: 54px;
+        overflow: hidden;
     }
 }
