@@ -1,15 +1,19 @@
-body{
+body {
     background-color: #fafafa;
+}
+.container {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 ion-icon {
     font-size: 25px;
-}
-
-.barra-vertical {
-    height: 23px;
-    border-left: 1px solid #DBDBDB;
-    margin: 0 10px;
 }
 
 .topo-completo {
@@ -19,6 +23,7 @@ ion-icon {
     height: 54px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
+    z-index: 1;
 }
 
 .topo {
@@ -28,6 +33,13 @@ ion-icon {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 0 22px;
+}
+
+.barra-vertical {
+    height: 23px;
+    border-left: 1px solid #DBDBDB;
+    margin: 0 10px;
 }
 
 .ocultar-desktop {
@@ -56,11 +68,56 @@ ion-icon {
     margin: 7px;
 }
 
+.principal {
+    width: 614px;
+}
+
+.lateral {
+    position: fixed;
+    left: calc(((100vw - 935px)/2) + 642px);
+    width: 293px;
+    height: 500px;
+    background-color: crimson;
+}
+
+.stories {
+    height: 100px;
+    background-color: greenyellow;
+    margin-bottom: 24px;
+}
+
+.post {
+    height: 600px;
+    background-color: lightblue;
+    margin-bottom: 60px;
+}
+
+.borda-padrao {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+
+
 @media (max-width: 935px)
 {
     .topo {
         width: auto;
     }
+
+    .lateral {
+        display: none;
+    }
+
+    .principal {
+        margin: 0 auto;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 614px)
@@ -73,15 +130,26 @@ ion-icon {
         display: block;
     }
 
-    .barra-vertical {
-        display: none;
-    }
-
     .caixa-logos .imagem-instagram {
         display: none;
     }
 
     .topo {
         justify-content: space-between;
+    }
+
+    .borda-padrao {
+        border: 1px solid #DBDBDB;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+    }
+
+    .stories {
+        margin-bottom: 0px;
+    }
+
+    .container {
+        top: 54px;
     }
 }
