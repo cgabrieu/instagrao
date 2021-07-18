@@ -9,11 +9,22 @@
     <title>Instagram</title>
 </head>
 <body>
-<div class="topo">
-    <div class="logo-icone"></div>
-    <div class="logo-instagram"></div>
-    <div class="caixa-pesquisa"></div>
-    <div class="acoes-icones"></div>
+<div class="topo-completo">
+    <div class="topo">
+        <div class="caixa-logos">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <div class="barra-vertical"></div>
+            <img class="imagem-instagram" src="images/logo.png" alt="Instagram">    
+        </div>
+        <input class="caixa-pesquisa ocultar" type="text" placeholder="Pesquisar">
+        <img class="imagem-instagram ocultar-desktop" src="images/logo.png" alt="Instagram">
+        <div class="icones-acoes">
+            <ion-icon class="icone" name="paper-plane-outline"></ion-icon>
+            <ion-icon class="icone ocultar" name="compass-outline"></ion-icon>
+            <ion-icon class="icone ocultar" name="heart-outline"></ion-icon>
+            <ion-icon class="icone ocultar" name="person-outline"></ion-icon>
+        </div>
+    </div>
 </div>
 <div class="container">
     <div class="principal">
@@ -25,5 +36,6 @@
         <div class="quem-seguir"></div>
     </div>   
 </div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

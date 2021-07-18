@@ -1,10 +1,87 @@
 body{
-    background-color: blanchedalmond;
+    background-color: #fafafa;
 }
 
-.topo {
+ion-icon {
+    font-size: 25px;
+}
+
+.barra-vertical {
+    height: 23px;
+    border-left: 1px solid #DBDBDB;
+    margin: 0 10px;
+}
+
+.topo-completo {
+    position: fixed;
+    right: 0;
+    left: 0;
     height: 54px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
 }
 
+.topo {
+    height: inherit;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ocultar-desktop {
+    display: none;
+}
+
+.imagem-instagram {
+    position: relative;
+    top: 3px;
+}
+
+.caixa-logos {
+    display: flex;
+}
+
+.caixa-pesquisa {
+    width: 215px;
+    text-align: center;
+    height: 23px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.icone {
+    margin: 7px;
+}
+
+@media (max-width: 935px)
+{
+    .topo {
+        width: auto;
+    }
+}
+
+@media (max-width: 614px)
+{
+    .ocultar {
+        display: none;
+    }
+
+    .ocultar-desktop {
+        display: block;
+    }
+
+    .barra-vertical {
+        display: none;
+    }
+
+    .caixa-logos .imagem-instagram {
+        display: none;
+    }
+
+    .topo {
+        justify-content: space-between;
+    }
+}
