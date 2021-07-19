@@ -160,7 +160,7 @@ ion-icon {
 }
 
 .post {
-    height: 749px;
+    height: auto;
     margin-bottom: 60px;
 }
 
@@ -249,12 +249,13 @@ ion-icon {
 }
 
 .rodape-post {
-    height: 76px;
+    height: auto;
     background-color: #FFFFFF;
+    font-size: 14px;
+    padding: 15px;
 }
 
 .icones-post {
-    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -266,7 +267,7 @@ ion-icon {
 .info-curtidas-post {
     display: flex;
     align-items: center;
-    padding: 0 17px;
+    margin: 10px 0;
 }
 
 .info-curtidas-post img {
@@ -279,6 +280,66 @@ ion-icon {
     font-size: 14px;
     font-weight: 300;
 }
+
+.titulo-post {
+    margin: 10px 0;
+}
+
+.secao-comentarios p {
+    
+}
+
+
+
+.comentario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.comentario ion-icon {
+    font-size: 15px;
+}
+
+.linha-horizontal {
+    border-top: 1px solid #f1efef;
+    margin: 15px 0;
+}
+
+.input-comentario {
+    font-size: 14px;
+    outline: none;
+    border: 0;
+}
+
+.adicione-comentario {
+    display: flex;
+    align-items: center;
+}
+
+.seu-comentario h6 {
+    color: #B2DFFC;
+    transition: color 0.3s;
+
+}
+
+.seu-comentario h6:hover {
+    color: #0095F6;
+}
+
+
+.adicione-comentario ion-icon {
+    margin-right: 15px;
+}
+
+.seu-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 @media (max-width: 935px)
 {
