@@ -113,9 +113,8 @@ ion-icon {
 
 .lateral {
     position: fixed;
-    left: calc(((100vw - 935px)/2) + 642px);
+    left: calc(((100vw - 935px)/2) + 642px); /* Tamanho da viewport menos o conteudo da página, sobra o espaço vazio, esse é divido por 2 e somado a largura do feed + 28px que precisa ter entre a barra lateral */
     width: 293px;
-    height: 500px;
 }
 
 .stories {
@@ -162,7 +161,6 @@ ion-icon {
 
 .post {
     height: 749px;
-    background-color: lightblue;
     margin-bottom: 60px;
 }
 
@@ -352,5 +350,17 @@ ion-icon {
     }
     .barra-inferior-mobile ion-icon {
         padding: 16px 19px;
+    }
+
+    .feed, .post, .conteudo-post img, video{
+        width: 100vw;
+    }
+
+    .conteudo-post, .post, video {
+        height: auto;
+    }
+
+    .info-curtidas-post p{
+        font-size: 12px
     }
 }
